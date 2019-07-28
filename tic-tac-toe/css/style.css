@@ -1,0 +1,73 @@
+.board-container {
+  height: 370px;
+  width: 370px;
+}
+
+.board-container .row {
+  height: 100%;
+}
+
+.board-square {
+  border: 2px solid #F7F7F7;
+  height: 33%;
+  width: 33%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.face-container {
+  background-color: lightgray;
+  height: 300%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  //transition: 400ms;
+}
+
+.x, .o, .facedown {
+  height: 33%;
+  width: 100%;
+}
+
+
+.x, .o  {
+  display: table
+}
+
+.x p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 56px;
+  color: red;
+}
+
+.o p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 56px;
+  color: blue;
+}
+
+.flipped-x .face-container {
+  top: -100%;
+}
+
+.flipped-o .face-container {
+  top: -200%;
+}
+
+#header {
+  font-size: 36px;
+}
+
+#reset-button {
+  width: 370px;
+  margin: 15px auto 0;
+}
+
+#container {
+  position: relative;
+}
+#container canvas, #myCanvas {
+  position: absolute;
+}
